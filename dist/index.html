@@ -8,7 +8,263 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <div class="background">
+        <img class="hideImg" src="images/2109.w030.n002.191B.p1.191.jpg" alt="" id="imgNight">
+        <img class="hideImg" src="images/2110.w030.n002.225B.p1.225.jpg" alt="" id="imgMorning">
+        <img class="hideImg" src="images/2111.w015.n001.614B.p15.614.jpg" alt="" id="imgDay">
+        <img class="hideImg" src="images/2112.w015.n001.621B.p15.621.jpg" alt="" id="imgEvening">
+    </div>
+
+    <div class="mainContainer">
+        <div class="upperContainer">
+            <div class="leftContainer">
+                <img class="icon" src="#" id="imgTempToday">
+                <h1 id="descriptionToday"></h1>
+                <h1 id="cityName"></h1>
+                <h1 id="mainTemp"></h1>
+                <div class="searchDiv">
+                    <input id="searchLocation" type="text" placeholder="Search location...">
+                    <img src="images/cloud-search-outline.png" alt="" id="searchBtn">
+                </div>
     
+            </div>
+        
+            <div class="rightContainer">
+                <div class="feelsLike">
+                    <img src="images/weather.png" alt="" class="rightIcons">
+                    <div>
+                        <p class="rightHeaders">Feels Like</p>
+                        <p class="rightTexts" id="feelsLikeText"></p>
+                    </div>
+                </div>
+                <div class="UVIndex">
+                    <img src="images/uv-index.png" alt="" class="rightIcons">
+                    <div>
+                        <p class="rightHeaders">UV Index</p>
+                        <p class="rightTexts" id="UVIndexText"></p>
+                    </div>
+                </div>
+                <div class="rainChance">
+                    <img src="images/rain.png" alt="" class="rightIcons">
+                    <div>
+                        <p class="rightHeaders">Chance of Rain</p>
+                        <p class="rightTexts" id="rainChanceText"></p>
+                    </div>
+                </div>
+                <div class="humidity">
+                    <img src="images/humidity.png" alt="" class="rightIcons">
+                    <div>
+                        <p class="rightHeaders">Humidity</p>
+                        <p class="rightTexts" id="humidityText"></p>
+                    </div>
+                </div>
+                <div class="windSpeed">
+                    <img src="images/wind.png" alt="" class="rightIcons">
+                    <div>
+                        <p class="rightHeaders">Wind Speed</p>
+                        <p class="rightTexts" id="windSpeedText"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="dailyHourlyContainer">
+            <p id="weekForecast">7 Days</p>
+            <p id="hourlyForecast">24 Hours</p>
+        </div>
+    
+        <div class="lowerContainer">
+            <div class="days">
+                <p id="day0"></p>
+                <img src="" alt="" id="icon0" class="dayIcons">
+                <p id="day0Temp"></p>
+                <p id ="night0Temp"></p>
+            </div>
+            <div class="days">
+                <p id="day1"></p>
+                <img src="" alt="" id="icon1" class="dayIcons">
+                <p id="day1Temp"></p>
+                <p id ="night1Temp"></p>
+            </div>
+            <div class="days">
+                <p id="day2"></p>
+                <img src="" alt="" id="icon2" class="dayIcons">
+                <p id="day2Temp"></p>
+                <p id ="night2Temp"></p>
+            </div>
+            <div class="days">
+                <p id="day3"></p>
+                <img src="" alt="" id="icon3" class="dayIcons">
+                <p id="day3Temp"></p>
+                <p id ="night3Temp"></p>
+            </div>
+            <div class="days">
+                <p id="day4"></p>
+                <img src="" alt="" id="icon4" class="dayIcons">
+                <p id="day4Temp"></p>
+                <p id ="night4Temp"></p>
+            </div>
+            <div class="days">
+                <p id="day5"></p>
+                <img src="" alt="" id="icon5" class="dayIcons">
+                <p id="day5Temp"></p>
+                <p id ="night5Temp"></p>
+            </div>
+            <div class="days">
+                <p id="day6"></p>
+                <img src="" alt="" id="icon6" class="dayIcons">
+                <p id="day6Temp"></p>
+                <p id ="night6Temp"></p>
+            </div>
+
+            <div class="carousel">
+                <div class="arrow" id="arrowLeft">
+                    <img src="images/chevron-double-left.png" alt="">
+                </div>
+                <div class="carousel__track-container">
+                    <div class="carousel__track">
+                        <div class="carousel__slide">
+                            <div class="hourlyRow1">
+                                <p id="hour0">test</p>
+                                <p id="hourTemp0"></p>
+                                <img src="" alt="" class="hourIcon" id="hourIcon0">
+                            </div>
+                            <div class="hourlyRow1">
+                                <p id="hour1">test</p>
+                                <p id="hourTemp1"></p>
+                                <img src="" alt="" class="hourIcon" id="hourIcon1">
+                            </div>
+                            <div class="hourlyRow1">
+                                <p id="hour2">test</p>
+                                <p id="hourTemp2"></p>
+                                <img src="" alt="" class="hourIcon" id="hourIcon2">
+                            </div>
+                            <div class="hourlyRow1">
+                                <p id="hour3">test</p>
+                                <p id="hourTemp3"></p>
+                                <img src="" alt="" class="hourIcon" id="hourIcon3">
+                            </div>
+                            <div class="hourlyRow1">
+                                <p id="hour4">test</p>
+                                <p id="hourTemp4"></p>
+                                <img src="" alt="" class="hourIcon" id="hourIcon4">
+                            </div>
+                            <div class="hourlyRow1">
+                                <p id="hour5">test</p>
+                                <p id="hourTemp5"></p>
+                                <img src="" alt="" class="hourIcon" id="hourIcon5">
+                            </div>
+                            <div class="hourlyRow1">
+                                <p id="hour6">test</p>
+                                <p id="hourTemp6"></p>
+                                <img src="" alt="" class="hourIcon" id="hourIcon6">
+                            </div>
+                            <div class="hourlyRow1">
+                                <p id="hour7">test</p>
+                                <p id="hourTemp7"></p>
+                                <img src="" alt="" class="hourIcon" id="hourIcon7">
+                            </div>
+                        </div>
+                        <div class="carousel__slide">
+                            <div class="hourlyRow2">
+                                <p id="hour8">test</p>
+                                <p id="hourTemp8"></p>
+                                <img src="" alt="" class="hourIcon" id="hourIcon8">
+                            </div>
+                            <div class="hourlyRow2">
+                                <p id="hour9">test</p>
+                                <p id="hourTemp9"></p>
+                                <img src="" alt="" class="hourIcon" id="hourIcon9">
+                            </div>
+                            <div class="hourlyRow2">
+                                <p id="hour10">test</p>
+                                <p id="hourTemp10"></p>
+                                <img src="" alt="" class="hourIcon" id="hourIcon10">
+                            </div>
+                            <div class="hourlyRow2">
+                                <p id="hour11">test</p>
+                                <p id="hourTemp11"></p>
+                                <img src="" alt="" class="hourIcon" id="hourIcon11">
+                            </div>
+                            <div class="hourlyRow2">
+                                <p id="hour12">test</p>
+                                <p id="hourTemp12"></p>
+                                <img src="" alt="" class="hourIcon" id="hourIcon12">
+                            </div>
+                            <div class="hourlyRow2">
+                                <p id="hour13">test</p>
+                                <p id="hourTemp13"></p>
+                                <img src="" alt="" class="hourIcon" id="hourIcon13">
+                            </div>
+                            <div class="hourlyRow2">
+                                <p id="hour14">test</p>
+                                <p id="hourTemp14"></p>
+                                <img src="" alt="" class="hourIcon" id="hourIcon14">
+                            </div>
+                            <div class="hourlyRow2">
+                                <p id="hour15">test</p>
+                                <p id="hourTemp15"></p>
+                                <img src="" alt="" class="hourIcon" id="hourIcon15">
+                            </div>
+                        </div>
+                        <div class="carousel__slide">
+                            <div class="hourlyRow3">
+                                <p id="hour16">test</p>
+                                <p id="hourTemp16"></p>
+                                <img src="" alt="" class="hourIcon" id="hourIcon16">
+                            </div>
+                            <div class="hourlyRow3">
+                                <p id="hour17">test</p>
+                                <p id="hourTemp17"></p>
+                                <img src="" alt="" class="hourIcon" id="hourIcon17">
+                            </div>
+                            <div class="hourlyRow3">
+                                <p id="hour18">test</p>
+                                <p id="hourTemp18"></p>
+                                <img src="" alt="" class="hourIcon" id="hourIcon18">
+                            </div>
+                            <div class="hourlyRow3">
+                                <p id="hour19">test</p>
+                                <p id="hourTemp19"></p>
+                                <img src="" alt="" class="hourIcon" id="hourIcon19">
+                            </div>
+                            <div class="hourlyRow3">
+                                <p id="hour20">test</p>
+                                <p id="hourTemp20"></p>
+                                <img src="" alt="" class="hourIcon" id="hourIcon20">
+                            </div>
+                            <div class="hourlyRow3">
+                                <p id="hour21">test</p>
+                                <p id="hourTemp21"></p>
+                                <img src="" alt="" class="hourIcon" id="hourIcon21">
+                            </div>
+                            <div class="hourlyRow3">
+                                <p id="hour22">test</p>
+                                <p id="hourTemp22"></p>
+                                <img src="" alt="" class="hourIcon" id="hourIcon22">
+                            </div>
+                            <div class="hourlyRow3">
+                                <p id="hour23">test</p>
+                                <p id="hourTemp23"></p>
+                                <img src="" alt="" class="hourIcon" id="hourIcon23">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="arrow" id="arrowRight">
+                    <img src="images/chevron-double-right.png" alt="">
+                </div>
+            </div>
+
+           
+           
+
+        </div>
+    </div>
+    
+
+
+
 
     <script src="main.js"></script>
 </body>
