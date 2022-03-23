@@ -51,7 +51,7 @@ export function setBackgroundImg() {
 export function render(cityData, cityNameHTML) {
   const weatherIcon = cityData.current.weather[0].icon;
 
-  img.src = `http://openweathermap.org/img/wn/${weatherIcon}@2x.png`;
+  img.src = `https://openweathermap.org/img/wn/${weatherIcon}@2x.png`;
 
   upperCase(h1, cityData.current.weather[0].description);
 
@@ -69,7 +69,7 @@ export function render(cityData, cityNameHTML) {
     const nightTemp = document.getElementById(`night${i}Temp`);
     const icon = document.getElementById(`icon${i}`);
     const iconLink = cityData.daily[i].weather[0].icon;
-    const iconSRC = `http://openweathermap.org/img/wn/${iconLink}@2x.png`;
+    const iconSRC = `https://openweathermap.org/img/wn/${iconLink}@2x.png`;
 
     dayTemp.innerHTML = `${cityData.daily[i].temp.day.toFixed()} °C`;
     nightTemp.innerHTML = `${cityData.daily[i].temp.night.toFixed()} °C`;
@@ -81,7 +81,7 @@ export function render(cityData, cityNameHTML) {
     const hourTemp = document.getElementById(`hourTemp${i}`);
     const hourIcon = document.getElementById(`hourIcon${i}`);
     const iconLink = cityData.hourly[i].weather[0].icon;
-    const iconSRC = `http://openweathermap.org/img/wn/${iconLink}@2x.png`;
+    const iconSRC = `https://openweathermap.org/img/wn/${iconLink}@2x.png`;
 
     hourTemp.innerHTML = `${cityData.hourly[i].temp.toFixed()} °C`;
     hourIcon.src = iconSRC;
