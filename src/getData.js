@@ -32,7 +32,7 @@ function getData() {
       DOM.render(cityData, DOM.cityNameInput.value);
 
       if (!response.ok) throw new Error();
-    } catch {
+    } catch (error) {
       alert('could not find city');
     }
   }

@@ -133,10 +133,19 @@ function renderDayNameHTML() {
 function renderHourTag() {
   const h = new Date().getHours();
 
-  for (let i = 0; i <= 24 - h; i++) {
-    const getContainer = document.getElementById(`hour${i}`);
+  // having trouble when at midnight so added a quick fix
+  if (h !== 0) {
+    for (let i = 0; i <= 24 - h; i++) {
+      const getContainer = document.getElementById(`hour${i}`);
 
-    getContainer.innerHTML = `${h + i}:00`;
+      getContainer.innerHTML = `${h + i}:00`;
+    }
+  } else {
+    for (let i = 0; i <= 23 - h; i++) {
+      const getContainer = document.getElementById(`hour${i}`);
+
+      getContainer.innerHTML = `${h + i}:00`;
+    }
   }
 
   for (let i = 0; i < h - 1; i++) {
